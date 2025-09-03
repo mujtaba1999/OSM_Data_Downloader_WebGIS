@@ -1,10 +1,4 @@
-Perfect 👍 — since you want a **detailed README.md**, I’ll write a well-structured one for your **GIS Web Application**, covering features, installation, usage, dependencies, screenshots (placeholders), and contribution guidelines.
 
-Here’s the full **README.md** you can put in your GitHub repository:
-
----
-
-```markdown
 # 🌍 GIS Web Application
 
 An interactive **Geographic Information System (GIS) web app** for fetching and visualizing **OpenStreetMap (OSM) data** within a user-defined or uploaded **Area of Interest (AOI)**.  
@@ -144,33 +138,8 @@ The app uses CDN-hosted libraries (no installation required):
 
 ---
 
-## 🧑‍💻 Development
 
-We provide a `Makefile` for common tasks:
 
-```bash
-make help    # List available commands
-make lint    # Run linter checks (optional)
-make test    # Run tests (optional)
-make build   # Prepare build (if needed)
-```
-
----
-
-## 🤝 Contributing
-
-We welcome contributions!
-
-* Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-* Code of Conduct: [CODE\_OF\_CONDUCT.md](CODE_OF_CONDUCT.md)
-
----
-
-## 🛡️ Security
-
-If you discover a security issue, please see [SECURITY.md](SECURITY.md).
-
----
 
 ## 📝 License
 
@@ -186,7 +155,3 @@ This project is licensed under the [MIT License](LICENSE).
 
 ```
 
----
-
-Would you like me to also **package all repository files into a ZIP** (with this README, your `index.html`, `app.js`, `main.css`, and GitHub configs), so you can directly upload it to GitHub?
-```
