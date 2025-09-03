@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIS Web Application</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-draw/dist/leaflet.draw.css" />
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the GIS Web Application</h1>
+    </header>
+    <div id="title-bar">Automated OSM data downloader</div>
+    <main>
+    <div id="map"></div>
+    <div id="layer-dropdown-container">
+        <select id="layer-dropdown">
+            <option value="roads">Roads</option>
+            <option value="buildings">Buildings</option>
+            <option value="shops">Shops</option>
+            <option value="all">All of the above</option>
+        </select>
+        <button id="fetch-osm-btn" disabled>Fetch OSM Data</button>
+        <button id="download-geojson-btn" disabled style="margin-top:8px;">Download GeoJSON</button>
+        <button id="clear-selection-btn" style="margin-top:8px;">Clear Selection</button>
+        <div id="fetching-indicator" style="display:none; margin-top:8px; width:100%; text-align:center; background:var(--panel-bg); padding:7px 0; border-radius:8px; box-shadow:0 2px 8px rgba(91,157,249,0.07); font-size:15px; color:var(--accent); border:1px solid var(--border); font-family:'Inter', Arial, sans-serif;">Fetching data...</div>
+    </div>
+    <div id="layer-control-panel" class="collapsed">
+        <div id="layer-control-header" style="display:flex;align-items:center;justify-content:space-between;cursor:pointer;">
+            <h3 style="margin:0;font-size:16px;">Layers</h3>
+            <span id="layer-control-toggle" style="font-size:18px;user-select:none;">&#9776;</span>
+        </div>
+        <div id="layer-control-content">
+            <label style="display:block; margin-bottom:8px;"><input type="checkbox" id="toggle-aoi" disabled> AOI Polygon</label>
+            <label style="display:block; margin-bottom:8px;"><input type="checkbox" id="toggle-uploaded" disabled> Uploaded AOI</label>
+            <label style="display:block;"><input type="checkbox" id="toggle-osm" disabled> OSM Data</label>
+        </div>
+    </div>
+    <div id="upload-tab">
+        <label for="upload-input" style="font-size:15px; color:#222; font-family:'Inter', Arial, sans-serif;">Upload AOI (Shapefile/GeoJSON):</label>
+        <input type="file" id="upload-input" accept=".geojson,.json,.zip" style="margin-top:6px;">
+        <button id="remove-upload-btn" style="margin-top:8px;">Remove Uploaded AOI</button>
+    </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 GIS Web Application</p>
+    </footer>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-draw/dist/leaflet.draw.js"></script>
+    <script src="https://unpkg.com/shpjs@latest/dist/shp.min.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
