@@ -14,91 +14,22 @@ This project lets you:
 
 ## ✨ Features
 
-✅ **Interactive Map** (Leaflet.js with OSM basemap)  
-✅ **Draw AOI** using Leaflet Draw tools (polygon support).  
-✅ **Upload AOI** as:
+ **Interactive Map** (Leaflet.js with OSM basemap)  
+ **Draw AOI** using Leaflet Draw tools (polygon support).  
+ **Upload AOI** as:
    - GeoJSON (`.geojson` or `.json`)
    - Shapefile (`.zip` containing `.shp`, `.shx`, `.dbf`)  
-✅ **Fetch OSM Data** by category:
+ **Fetch OSM Data** by category:
    - Roads
    - Buildings
    - Shops
    - All features  
-✅ **GeoJSON Download** of fetched data.  
-✅ **Layer Management Panel** to toggle visibility of AOI, uploaded AOI, and OSM layers.  
-✅ **Collapsible UI Panels** for a clean user experience.  
+ **GeoJSON Download** of fetched data.  
+ **Layer Management Panel** to toggle visibility of AOI, uploaded AOI, and OSM layers.  
+ **Collapsible UI Panels** for a clean user experience.  
 
 ---
 
-## 🖼️ Screenshots
-
-*(Add your own screenshots here for GitHub preview, e.g. `docs/screenshots/`)*  
-
-Example placeholders:  
-
-- Drawing AOI:  
-  ![Draw AOI](docs/screenshots/draw_aoi.png)  
-
-- Uploading AOI:  
-  ![Upload AOI](docs/screenshots/upload_aoi.png)  
-
-- Viewing fetched OSM data:  
-  ![OSM Data](docs/screenshots/osm_data.png)  
-
----
-
-## 📂 Project Structure
-
-```
-
-gis-web-app/
-│
-├── index.html              # Main entry point
-├── scripts/
-│   └── app.js              # Application logic (map, API, interactivity)
-├── styles/
-│   └── main.css            # App styling
-├── docs/
-│   └── screenshots/        # Place your screenshots here
-├── .github/
-│   ├── workflows/ci.yml    # GitHub Actions CI workflow
-│   └── ISSUE\_TEMPLATE/     # Bug report template
-├── LICENSE
-├── README.md
-├── CONTRIBUTING.md
-├── CODE\_OF\_CONDUCT.md
-├── SECURITY.md
-├── CHANGELOG.md
-└── Makefile                # Dev commands
-
-````
-
----
-
-## ⚙️ Setup & Installation
-
-### 1. Clone the Repository
-```bash
-git clone https://github.com/YOUR_USERNAME/gis-web-app.git
-cd gis-web-app
-````
-
-### 2. Run Locally
-
-Since this app is pure **HTML, CSS, JS**:
-
-* Simply open `index.html` in your browser.
-* No server or build tools are required.
-
-*(Optional)* Run with a lightweight HTTP server (Python):
-
-```bash
-python -m http.server 8000
-```
-
-Then open [http://localhost:8000](http://localhost:8000).
-
----
 
 ## 📦 Dependencies
 
